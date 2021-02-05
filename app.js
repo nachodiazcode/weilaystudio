@@ -1,7 +1,7 @@
 var http = require('http');
 var servidor = http.createServer(function(petición, respuesta){
     respuesta.writeHead(200, {'Content-Type' : 'text/html'});
-    respuesta.write("hola mundo");
+    respuesta.write("sito en construcción");
     console.log("petición web"); 
 })
 
