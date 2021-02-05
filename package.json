@@ -4,7 +4,9 @@
   "description": "oficial website studio of design and develop customer sites and apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "pm2 start app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://gitlab.com/nachodevcode/weilatstudio/issues"
   },
-  "homepage": "https://gitlab.com/nachodevcode/weilatstudio#readme"
+  "homepage": "https://gitlab.com/nachodevcode/weilatstudio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

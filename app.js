@@ -1,10 +1,16 @@
-var http = require('http');
-var servidor = http.createServer(function(petición, respuesta){
-    respuesta.writeHead(200, {'Content-Type' : 'text/html'});
-    respuesta.write("sito en construcción");
-    console.log("petición web"); 
+const express = require('express')
+const app = express()
+
+const port = 80 
+
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+
+app.get('/', ( req, res) => {
+    res.status(200).send(`<h2>Sitio Web en Construcción</h2> `)
 })
 
-servidor.listen(80)
-
-console.log('Escuchando al puerto 80')
+app.listen(port, async ()=>{
+  await  console.log(`Servidor Se esta esuchando en el puerto 80`)
+})
