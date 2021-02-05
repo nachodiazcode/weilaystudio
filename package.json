@@ -1,0 +1,19 @@
+{
+  "name": "weilaystudio",
+  "version": "1.0.0",
+  "description": "oficial website studio of design and develop customer sites and apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/nachodevcode/weilatstudio.git"
+  },
+  "author": "nachodiaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/nachodevcode/weilatstudio/issues"
+  },
+  "homepage": "https://gitlab.com/nachodevcode/weilatstudio#readme"
+}
