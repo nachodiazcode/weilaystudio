@@ -6,9 +6,8 @@ const port = 80
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-
 app.get('/', ( req, res) => {
-    res.status(200).send(`<h2>Sitio Web en Construcción</h2> `)
+    res.status(200).send(`<h1>Sitio Web en Construcción 2021 </h1> `)
 })
 
 app.listen(port, async ()=>{
