@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 const port = 80 ;
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
