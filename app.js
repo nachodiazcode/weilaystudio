@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
 app.get('/', ( req, res) => {
-    res.status(200).send(`<h1>Sitio Web en Construcción 2021 </h1> `);
+    res.status(200).send(`<h1>Sitio Web en Construcción</h1>`);
 });
 
 app.listen(port, async () => {
