@@ -1,16 +1,14 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+const mongoose = require('mongoose');
 
 const port = 80 ;
 
-app.configure(function(){
-
-  app.use(express.static(__dirname + '/public'));
-  app.use(express.json());
-  app.use(express.urlencoded({extended: true}));
-
-});
-
+app.use(express.static(__dirname + '/public'));
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(express.methodOverride());
 app.use(cors());
 
 app.get('/', ( req, res) => {
