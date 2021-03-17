@@ -19,11 +19,7 @@ app.get('/quienes-somos', (req, res) => {
 });
 
 app.get('/contacto', (req, res) => {
-   res.status(200).send(`<h1>Pronto te respondere, estoy construyendo el sitio</h1>`);
-});
-
-app.get('/hola ', (req, res) => {
-   res.status(200).send(`<p>Lorem ipsum</p>`);
+   res.status(200).send(`<h1>Pronto te respondere</h1>`);
 });
 
 app.listen(port, () => {
