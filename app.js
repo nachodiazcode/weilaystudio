@@ -18,6 +18,10 @@ app.get('/quienes-somos', (req, res) => {
    return res.status(200).send('soy nacho');
 })
 
+app.get('/quienes-somos', (req, res) => {
+  return res.status(200).send('Hola te responderé a la brevedad');
+})
+
 app.listen(port, async () => {
   await  console.log(`Servidor Se esta esuchando en el puerto 80`);
 });
