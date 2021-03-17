@@ -21,10 +21,11 @@ app.get('/quienes-somos', (req, res) => {
 app.get('/contacto', (req, res) => {
   return res.status(200).send(`<h1>Pronto te respondere, estoy construyendo el sitio</h1>`);
 })
+
 app.get('/historia ', (req, res) => {
   return res.status(200).send(`<p>Lorem ipsum</p>`);
 })
 
-app.listen(port, async () => {
-  await  console.log(`Servidor Se esta esuchando en el puerto 80`);
+app.listen(port, () => {
+    console.log(`Servidor Se esta esuchando en el puerto 80`);
 });
