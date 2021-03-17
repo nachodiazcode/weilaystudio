@@ -15,16 +15,16 @@ app.get('/', ( req, res) => {
 });
 
 app.get('/quienes-somos', (req, res) => {
-   return res.status(200).send('soy nacho');
-})
+    res.status(200).send('soy nacho');
+});
 
 app.get('/contacto', (req, res) => {
-  return res.status(200).send(`<h1>Pronto te respondere, estoy construyendo el sitio</h1>`);
-})
+   res.status(200).send(`<h1>Pronto te respondere, estoy construyendo el sitio</h1>`);
+});
 
-app.get('/historia ', (req, res) => {
-  return res.status(200).send(`<p>Lorem ipsum</p>`);
-})
+app.get('/hola ', (req, res) => {
+   res.status(200).send(`<p>Lorem ipsum</p>`);
+});
 
 app.listen(port, () => {
     console.log(`Servidor Se esta esuchando en el puerto 80`);
