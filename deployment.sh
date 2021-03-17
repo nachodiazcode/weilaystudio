@@ -2,6 +2,7 @@
 
 cd ../var/www/weilaystudio
 git fetch
-git pull origin main
+git pull origin maint
+git push
 sudo service nginx restart
 
