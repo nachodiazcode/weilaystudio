@@ -19,7 +19,7 @@ app.get('/quienes-somos', (req, res) => {
 })
 
 app.get('/contacto', (req, res) => {
-  return res.status(200).send('Hola te responderé a la brevedad');
+  return res.status(200).send(`<h1>Hola te responderé a la brevedad</h1>`);
 })
 
 app.listen(port, async () => {
