@@ -15,7 +15,7 @@ app.get('/', ( req, res) => {
 });
 
 app.get('/quienes-somos', (req, res) => {
-    res.status(200).send('soy nacho');
+    res.status(200).send('soy nacho y estoy aquí para ayudarte!');
 });
 
 app.get('/contacto', (req, res) => {
