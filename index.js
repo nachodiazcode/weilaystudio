@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 
 //port 
-const port = 8080 ;
+const port = 3000 ;
 
 
 server.get('/', (req, res)=>{
