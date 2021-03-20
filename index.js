@@ -1,9 +1,16 @@
 const express = require('express');
-const app = express();
+const server = express();
 const cors = require('cors');
+const port = 8080 ;
 
-const port = 80 ;
 
-app.listen(port, function() {
-    console.log("Servidor Se esta esuchando en el puerto 80");
+server.get('/', (req, res)=>{
+
+   return res.status(200).send(`<h1> Bienvenido a WeilayStudio.com <h1>`);
+
+})
+
+
+server.listen(port, function() {
+    console.log(`Servidor Se esta esuchando en el puerto :  ${port}`);
 });
