@@ -1,13 +1,12 @@
 const express = require('express');
 const server = express();
-const cors = require('cors');
+
+//port 
 const port = 8080 ;
 
 
 server.get('/', (req, res)=>{
-
    return res.status(200).send(`<h1> Bienvenido a WeilayStudio.com <h1>`);
-
 })
 
 
